@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6504c5a5c7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1>Abhishek</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+
+            <div class="header-text">
+
+                <h1>Hi, I'm <span>Abhishek</span><br> Kannor</h1>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------------------about--------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="about.jpeg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An aspiring newbie looking forward to solve problems in a creative and effective manner in a challenging position. I would like to
+                        enhance my educational and professional skills in a stable and dynamic workplace. Also, able to effectively self-manage during
+                        independent projects, as well as collaborate as a part of a productive team.</p>
+                    <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Responsive Websites </li>
+                            <li><span>Web Development</span><br>Designing Responsive Websites </li>
+                            <li><span>Web Development</span><br>Designing Responsive Websites </li
+                                
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023-2023</span><br>Cloud Intern</li>
+                            <li><span>2023-2023</span><br>AI/ML Consultant </li>
+                            <li><span>2022-2022</span><br>Intern</li
+                                
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>Mechanical Engineering in Smvit Bengaluru </li>
+                            <li><span>2019</span><br>Mechanical engineering in Tmae's Hospete </li>
+                            <li><span>2016</span><br>High School </li>
+                                
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------contact---------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>abhikannor12@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9108205812</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/abhi__buoy_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/AbhiKannor"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/abhi-buoy/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kehsihba12"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message"  rows="6" placeholder="your Message" required></textarea> <br>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p><i class="fa-regular fa-copyright"></i>Abhishek Made by<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
